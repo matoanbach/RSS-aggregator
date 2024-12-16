@@ -1,0 +1,8 @@
+version: "2"
+sql:
+  - schema: "sql/schema"      # Path to the schema directory
+    queries: "sql/queries"    # Path to the queries directory
+    engine: "postgresql"      # Database engine
+    gen:
+      go:
+        out: "internal/database" # Directory for generated Go code
